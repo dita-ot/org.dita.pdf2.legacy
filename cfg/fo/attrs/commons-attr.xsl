@@ -23,4 +23,8 @@ See the accompanying LICENSE file for applicable license.
     <xsl:attribute name="padding">5pt</xsl:attribute>
   </xsl:attribute-set>
 
+  <xsl:attribute-set name="common.link">
+    <xsl:attribute name="font-style">italic</xsl:attribute>
+  </xsl:attribute-set>
+
 </xsl:stylesheet>
