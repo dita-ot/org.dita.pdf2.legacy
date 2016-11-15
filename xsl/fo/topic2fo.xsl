@@ -10,6 +10,7 @@ See the accompanying LICENSE file for applicable license.
 
   <xsl:import href="../../cfg/fo/attrs/commons-attr.xsl"/>
   <xsl:import href="../../cfg/fo/attrs/links-attr.xsl"/>
+  <xsl:import href="../../cfg/fo/attrs/tables-attr.xsl"/>
   <xsl:import href="task-elements.xsl"/>
 
 </xsl:stylesheet>
