@@ -24,14 +24,34 @@ See the accompanying LICENSE file for applicable license.
     <xsl:attribute name="border-right-width">0pt</xsl:attribute>
   </xsl:attribute-set>
   
-  <xsl:attribute-set name="lq">
+  <xsl:attribute-set name="lq" use-attribute-sets="common.border">
+    <xsl:attribute name="space-before">10pt</xsl:attribute>
     <xsl:attribute name="padding-left">6pt</xsl:attribute>
+    <xsl:attribute name="start-indent">92pt</xsl:attribute>
+    <xsl:attribute name="end-indent">92pt</xsl:attribute>
   </xsl:attribute-set>
   
-  <xsl:attribute-set name="lq_simple">
+  <xsl:attribute-set name="lq_simple" use-attribute-sets="common.border">
+    <xsl:attribute name="space-before">10pt</xsl:attribute>
+    <xsl:attribute name="space-after">10pt</xsl:attribute>
     <xsl:attribute name="padding-left">6pt</xsl:attribute>
+    <xsl:attribute name="start-indent">92pt</xsl:attribute>
+    <xsl:attribute name="end-indent">92pt</xsl:attribute>
   </xsl:attribute-set>
   
+  <xsl:attribute-set name="lq_link">
+    <xsl:attribute name="space-after">10pt</xsl:attribute>
+    <xsl:attribute name="end-indent">92pt</xsl:attribute>
+    <xsl:attribute name="font-weight">bold</xsl:attribute>
+  </xsl:attribute-set>
+  
+  <xsl:attribute-set name="lq_title" use-attribute-sets="base-font">
+    <xsl:attribute name="space-after">10pt</xsl:attribute>
+    <xsl:attribute name="end-indent">92pt</xsl:attribute>
+    <xsl:attribute name="font-weight">bold</xsl:attribute>
+    <xsl:attribute name="font-style">italic</xsl:attribute>
+  </xsl:attribute-set>
+
   <xsl:attribute-set name="q">
     <xsl:attribute name="border-left-width">0pt</xsl:attribute>
     <xsl:attribute name="border-right-width">0pt</xsl:attribute>
