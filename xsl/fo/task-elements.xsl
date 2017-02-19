@@ -11,7 +11,7 @@ See the accompanying LICENSE file for applicable license.
   xmlns:dita2xslfo="http://dita-ot.sourceforge.net/ns/200910/dita2xslfo"
   exclude-result-prefixes="dita2xslfo" version="2.0">
 
-  <xsl:template match="ol[contains(@class, ' task/steps ')]">
+  <xsl:template match="*[contains(@class, ' task/steps ')]">
     <xsl:choose>
       <xsl:when test="$GENERATE-TASK-LABELS = 'YES'">
         <fo:block>
@@ -38,7 +38,7 @@ See the accompanying LICENSE file for applicable license.
     </xsl:choose>
   </xsl:template>
 
-  <xsl:template match="ul[contains(@class, ' task/steps-unordered ')]">
+  <xsl:template match="*[contains(@class, ' task/steps-unordered ')]">
     <xsl:choose>
       <xsl:when test="$GENERATE-TASK-LABELS = 'YES'">
         <fo:block>
