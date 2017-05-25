@@ -9,5 +9,11 @@ See the accompanying LICENSE file for applicable license.
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0">
 
   <xsl:import href="../../cfg/fo/attrs/commons-attr.xsl"/>
+  <xsl:import href="../../cfg/fo/attrs/topic-attr.xsl"/>
+  <xsl:import href="../../cfg/fo/attrs/links-attr.xsl"/>
+  <xsl:import href="../../cfg/fo/attrs/tables-attr.xsl"/>
+  <xsl:import href="../../cfg/fo/attrs/toc-attr.xsl"/>
+  <xsl:import href="../../cfg/fo/attrs/glossary-attr.xsl"/>
+  <xsl:import href="task-elements.xsl"/>
 
 </xsl:stylesheet>
