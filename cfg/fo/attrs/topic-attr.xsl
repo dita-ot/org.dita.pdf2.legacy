@@ -24,6 +24,21 @@ See the accompanying LICENSE file for applicable license.
     <xsl:attribute name="border-right-width">0pt</xsl:attribute>
   </xsl:attribute-set>
   
+  <xsl:attribute-set name="section" use-attribute-sets="base-font">
+    <xsl:attribute name="line-height">
+      <xsl:value-of select="$default-line-height"/>
+    </xsl:attribute>
+    <xsl:attribute name="space-before">0.6em</xsl:attribute>
+  </xsl:attribute-set>
+  
+  <xsl:attribute-set name="example" use-attribute-sets="base-font common.border">
+    <xsl:attribute name="line-height" select="$default-line-height"/>
+    <xsl:attribute name="space-before">0.6em</xsl:attribute>
+    <xsl:attribute name="start-indent">36pt + from-parent(start-indent)</xsl:attribute>
+    <xsl:attribute name="end-indent">36pt</xsl:attribute>
+    <xsl:attribute name="padding">5pt</xsl:attribute>
+  </xsl:attribute-set>
+  
   <xsl:attribute-set name="lq" use-attribute-sets="common.border">
     <xsl:attribute name="space-before">10pt</xsl:attribute>
     <xsl:attribute name="padding-left">6pt</xsl:attribute>
